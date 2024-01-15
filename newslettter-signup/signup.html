@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="/docs/5.3/assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.112.5">
+    <title>Signin Template · Bootstrap v5.3</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
+
+    
+
+    
+
+<link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="sign-in.css" rel="stylesheet">
+  </head>
+  <body class="d-flex align-items-center py-4 bg-body-tertiary">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </symbol>
+    </svg>
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+              id="bd-theme"
+              type="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    
+<main class="form-signin w-100 m-auto">
+  <form action="/" method="post">
+    <img style="height: 60px;width: 100px;" class="mb-4" src="data:image/png;base64,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" alt="" width="72" height="57">
+    <h1 class="h3 mb-3 fw-normal">Signup</h1>
+
+
+      <input type="text" class="form-control top" placeholder="First Name" name="fName" required autofocus>
+      <input type="text" class="form-control middle" placeholder="Last Name" name="lName">
+      <input type="email" class="form-control bottom" placeholder="Email" name="cu_email">
+    <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+    <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2023</p>
+  </form>
+</main>
+<script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    </body>
+</html>
+
+<style>
+    html,
+body {
+  height: 100%;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 1rem;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.top {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.middle {
+  border-radius: 0px;
+}
+
+.bottom {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+</style>

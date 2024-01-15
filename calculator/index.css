@@ -1,0 +1,35 @@
+.main-box {
+    margin-top: 60px;
+    margin-left:450px;
+    height: 600px;
+    width: 610px;
+    border: solid 1px gray;
+}
+
+.container {
+    margin-top: 238px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.buttons {
+    height: 50px;
+    width: 120px;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+.inner {
+    font-size: 20px;
+    background-color: white;
+    border: 0px solid white;
+    margin: 10px 35px;
+}
+
+.equal_to {
+    background-color: rgb(3, 117, 117);
+    color: white;
+    font-size: 25px;
+}
+

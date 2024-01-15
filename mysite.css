@@ -1,0 +1,72 @@
+.cont {
+    background-color: #EFF5F5;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    position: relative;
+    padding-top: 20px;
+    color: #66BFBF;
+}
+
+h1 {
+    font-size: 437.5%;
+    margin-top: 50px;
+    font-family: 'Sacramento',sans-serif;
+    line-height: 2;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    color: #40514e;
+}
+
+.bottom-cloud {
+    position: absolute;
+}
+
+.top-cloud {
+    position: relative;
+    left: 250px;
+    top: 10px;
+}
+
+.myimg {
+    margin-top: 30px;
+}
+
+.skill-row {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+}
+
+.myskills {
+    width: 25%;
+    float: left;
+}
+
+.py {
+    width: 17%;
+    float: right;
+}
+
+p {
+    font-family: 'Sacramento',sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: 'Sacramento',sans-serif;
+    font-weight: normal;
+}
+
+h3 {
+    color: #11999E;
+}
+
+a {
+    color: #11999E;
+}

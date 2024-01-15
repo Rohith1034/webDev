@@ -1,0 +1,37 @@
+@font-face {
+    font-family: kks;
+    src: url("NIKEA.otf");
+}
+#hero {
+    color: #82a5ca;
+    background-image: url("https://media.giphy.com/media/iicDrNGWxHmDrIni6j/giphy.gif");
+    background-size: cover;
+    text-align: center;
+    font-family: kks;
+    font-size: 20px;
+    padding: 10px 0px 370px 0px;
+}
+button {
+    color: #82a5ca;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 30px;
+    font-family: inherit;
+    font-weight: 800;
+}
+#underline{
+    border-bottom: 4px solid white;
+}
+#ima{
+    height: 80px;
+    width: 200px
+}
+.terms{
+    border: 15px solid white;
+    color: #82a5ca;
+    font-family: kks;
+    text-align: center;
+    font-size: 20px;
+}

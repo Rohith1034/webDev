@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Drum Kit</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+</head>
+
+<body>
+
+  <h1 id="title">Drum 🥁 Kit</h1>
+  <div class="set">
+    <button class="w drum">w</button>
+    <button class="a drum">a</button>
+    <button class="s drum">s</button>
+    <button class="d drum">d</button>
+    <button class="j drum">j</button>
+    <button class="k drum">k</button>
+    <button class="l drum">l</button>
+  </div>
+  <div class="input_btn">
+    <input placeholder="Enter name">
+    <button onclick="collect()" type="button">Submit</button>
+  </div>
+  <script>
+    function collect() {
+      var name = document.querySelectorAll("input")[0].value;
+      if (name == 'karthik') {
+        var audio1 = new Audio("C:\\Users\\manin\\webdev\\Drum Kit Starting Files\\sounds\\karthik.mp3");
+        audio1.play();
+      }
+    }
+  </script>
+  <footer>
+    Made with ❤️ in London.
+  </footer>
+  <script src="index.js"></script>
+</body>
+
+</html>

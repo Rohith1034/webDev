@@ -1,0 +1,61 @@
+@font-face {
+    font-family: kks;
+    src: url("Travel\ October.ttf");
+}
+h1{
+    font-family: kks;
+    font-size: 40px;
+    text-align: center;
+    margin-left: 70px;
+}
+#main{
+    width: 200px;
+    border-radius: 50%;
+    border: 6px solid pink;
+}
+body{
+    text-align: center;
+    background-color: #a2d2ff;
+    color: white;
+    text-shadow: 0px 0px 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.details {
+    padding: 4px 8px 4px 8px;
+    font-family: kks;
+    font-size: 20px;
+    background: pink;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    width: 150px;
+}
+.details1 {
+    padding: 2px 6px 2px 6px;
+    font-family: kks;
+    font-size: 20px;
+    background: pink;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    width: 100px;
+}
+.gift {
+    font-family: kks;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.gift-img{
+    background-image: url('C:\\Users\\manin\\Downloads\\gold-ribbon-on-pink-background-gift-box-cover-vector-4659249.webp');
+    background-size: cover;
+    height: 400px;
+    width: 400px;
+    border: 5px solid white;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.gift-img:hover{
+    background-image: url('dsp.gif');
+}

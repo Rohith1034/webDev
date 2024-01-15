@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Calculator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" href="cal.ico">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #2980B9, #6DD5FA);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 60px;
+        }
+
+        .main-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .inputbox {
+            border: 1px solid black;
+            text-align: right;
+            font-size: 30px;
+            font-weight: bold;
+            height: 60px;
+            width: 600px;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: repeat(7, 1fr);
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0;
+            /* Updated: Set gap to 0 */
+            justify-items: center;
+            align-items: center;
+        }
+
+        .buttons {
+            background-color: white;
+            font-size: 20px;
+            height: 50px;
+            width: 120px;
+            border: solid 1px black;
+            border-radius: 5px;
+            margin: 0;
+        }
+
+        .equal_to {
+            background-color: rgb(3, 117, 117);
+            color: white;
+            font-size: 25px;
+            display: inline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="title">Calculator</h1>
+    <div class="main-box">
+        <input class="inputbox" type="text">
+        <div class="container">
+            <button class="buttons" class="inner 2nd">n√X</button>
+            <button class="buttons" class="inner pi">Π</button>
+            <button class="buttons" class="inner e">e</button>
+            <button class="buttons" class="inner CE">CE</button>
+            <button class="buttons" class="inner del">del</button>
+            <button class="buttons" class="inner xsquare">x<sup>2</sup></button>
+            <button class="buttons" class="inner inverse_of_x">1/x</button>
+            <button class="buttons" class="inner abs">SIN</button>
+            <button class="buttons" class="inner exp">COS</button>
+            <button class="buttons" class="inner mod">TAN</button>
+            <button class="buttons" class="inner sqrt">√x</button>
+            <button class="buttons" class="inner right">(</button>
+            <button class="buttons" class="inner left">)</button>
+            <button class="buttons" class="inner fact">n!</button>
+            <button class="buttons" class="inner divi">/</button>
+            <button class="buttons" class="inner x_power_y">x<sup>y</sup></button>
+            <button class="buttons" class="inner seven">7</button>
+            <button class="buttons" class="inner eight">8</button>
+            <button class="buttons" class="inner nine">9</button>
+            <button class="buttons" class="inner mul">*</button>
+            <button class="buttons" class="inner ten_power_x">10<sup>x</sup></button>
+            <button class="buttons" class="inner four">4</button>
+            <button class="buttons" class="inner five">5</button>
+            <button class="buttons" class="inner six">6</button>
+            <button class="buttons" class="inner sub">-</button>
+            <button class="buttons" class="inner log">log</button>
+            <button class="buttons" class="inner one">1</button>
+            <button class="buttons" class="inner two">2</button>
+            <button class="buttons" class="inner three">3</button>
+            <button class="buttons" class="inner add">+</button>
+            <button class="buttons" class="inner ln">ln</button>
+            <button class="buttons" class="inner plus_or_minus">+/-</button>
+            <button class="buttons" class="inner zero">0</button>
+            <button class="buttons" class="inner dot">.</button>
+            <button class="buttons equal_to" class="inner equal_to">=</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

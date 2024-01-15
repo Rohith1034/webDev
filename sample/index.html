@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Append Values to Input Field</title>
+</head>
+<body>
+    <form id="myForm" action="/" method="post">
+        <label for="inputValues">Enter values:</label>
+        <input type="text" id="inputValues" name="inputValues">
+        <button type="submit" onclick="appendToInput()">Append</button>
+        <button type="button" onclick="resetInput()">Reset</button>
+    </form>
+    
+    <div>
+        <h2>Stored Values:</h2>
+        <ul id="outputList"></ul>
+    </div>
+
+    <script>
+        var valuesArray = [];
+
+        function appendToInput() {
+            var inputValue = document.getElementById("inputValues").value;
+
+            if (inputValue !== "") {
+                // Append the value to the array
+                valuesArray.push(inputValue);
+
+                // Update the input field's value to show the current array
+                document.getElementById("inputValues").value = valuesArray.join(", ");
+
+                // Update the list of stored values
+                updateOutputList();
+            }
+        }
+
+        function resetInput() {
+            // Clear the array and reset the input field and output list
+            valuesArray = [];
+            document.getElementById("inputValues").value = "";
+            updateOutputList();
+        }
+
+        function updateOutputList() {
+            var outputList = document.getElementById("outputList");
+            outputList.innerHTML = "";
+
+            valuesArray.forEach(function(value) {
+                var listItem = document.createElement("li");
+                listItem.textContent = value;
+                outputList.appendChild(listItem);
+            });
+        }
+    </script>
+</body>
+</html>

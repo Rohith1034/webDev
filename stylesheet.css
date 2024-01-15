@@ -1,0 +1,48 @@
+
+img {
+    margin-top: 200px;
+    display: block;
+    width: 272px;
+    margin-left: 580px;
+    height: 92;
+}
+input{
+    display: block;
+    width: 443px;
+    height: 25px;
+    margin-left: 500px;
+    border-radius: 20px;
+    border: 2px solid #b6bfbe;
+    height: 40px;
+}
+.search{
+    display: inline;
+    margin-left: 590px;
+}
+.lucky{
+    display: inline;
+    margin-left: 10px;
+}
+.refer{
+    margin-top: 20px;
+    margin-left: 465px;
+    font-size: 14px;
+}
+.buttons{
+    margin-top: 25px;
+}
+button {
+    height: 25px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #202124;
+    height: 36px;
+}
+

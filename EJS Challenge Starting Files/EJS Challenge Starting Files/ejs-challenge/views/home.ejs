@@ -1,0 +1,10 @@
+<%- include("partials/header.ejs") %>
+<h1>Home</h1>
+<p><%= homecontent %></p>
+<% console.log(post) %>
+<% for(var i=0; i<post.length; i++) {%>
+    <h1><%= post[i].heading %></h1>
+    <p style="display: inline;"><%= post[i].content.substring(0,100) + " ..." %></p>
+    <a href= "/post/<%= post[i].tittle %>">read more</a>
+ <% } %> 
+<%- include("partials/footer.ejs") %>

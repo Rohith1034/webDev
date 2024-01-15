@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <input type="text" name="personname" placeholder="Name">
+        <input type="number" name="personage" placeholder="Age">
+        <input type="submit">
+    </form>
+    <% for(let index = 0; index < items.length; index++) { %>
+        <h4><%= items[index].name %></h4>
+        <p><%= items[index].age %></p>
+    <% } %>
+</body>
+</html>
